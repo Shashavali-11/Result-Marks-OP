@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marks Percentages</title>
+  </head>
+  <body>
+    <p>Output :</p>
+    <marquee behavior="" direction=""><p id="dem"></p></marquee>
+    <script>
+      var marks =+ prompt("Enter Marks of a Student : ");
+      var op = []
+      if (marks >= 90 && marks <= 100) {
+        op.push("Distintion"+" - "+ marks)
+        console.log("Distintion", marks);
+      } else if (marks >= 75 && marks < 90) {
+        op.push("First Class."+" - "+ marks)
+        console.log("First Class", marks);
+      } else if (marks >= 60 && marks < 75) {
+        op.push("Second Class"+" - "+ marks)
+        console.log("Second Class.", marks);
+      } else if (marks >= 35 && marks < 60) {
+        op.push("Third Class"+" - "+ marks)
+        console.log("Third Class.", marks);
+      } else if (marks > 0 && marks < 35) {
+        op.push("Fail."+" - "+ marks)
+        console.log("Fail...", marks);
+      } else {
+        op.push("Distintion"+" - "+ marks)
+        console.log("Invalid Marks...", marks);
+      }
+
+      document.getElementById("dem").innerHTML = op;
+    </script>
+  </body>
+</html>
